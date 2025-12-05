@@ -41,7 +41,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         binding.fabAdd.setOnClickListener(view -> {
-
+            AddBookDialogFragment dialog = new AddBookDialogFragment();
+            dialog.show(getSupportFragmentManager(), "AddBookDialog");
         });
 
         setupNavigation();

@@ -9,16 +9,17 @@ public class BookEntity {
 
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo
-    private final int id;
+    private  int id;
     @ColumnInfo
-    private final String title;
+    private  String title;
     @ColumnInfo
-    private final String author;
+    private  String author;
     @ColumnInfo
     private  boolean favorite;
     @ColumnInfo
-    private final String  genre;
+    private  String  genre;
 
+    public BookEntity() {}
 
     public BookEntity(int id, String title, String author, boolean favorite, String genre) {
         this.id = id;
@@ -50,6 +51,22 @@ public class BookEntity {
 
     public void setFavorite(boolean favorite) {
         this.favorite = favorite;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
     }
 
 }

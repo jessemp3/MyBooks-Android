@@ -5,10 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="12dp"
+        android:backgroundTint="@android:color/white"
+        android:padding="20dp">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:padding="16dp"
+
         >
 
         <TextView
@@ -18,6 +30,7 @@
             android:textSize="24sp"
             android:gravity="center"
             android:padding="16dp"
+            android:textColor="@color/black"
             />
 
 
@@ -25,11 +38,10 @@
 
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/edtTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-
+            android:textColorHint="@color/black"
             app:boxCornerRadiusBottomEnd="15dp"
             app:boxCornerRadiusBottomStart="15dp"
             app:boxCornerRadiusTopEnd="15dp"
@@ -38,36 +50,38 @@
             app:hintEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="italic"
-
-                android:hint="Titulo" />
+                android:backgroundTint="#BFBFBF"
+                android:hint="Titulo"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
 
 
         </com.google.android.material.textfield.TextInputLayout>
 
 
-
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/edtAuthor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
             android:layout_marginBottom="16dp"
-            app:boxStrokeWidth="0dp"
+            android:textColorHint="@color/black"
             app:boxCornerRadiusBottomEnd="15dp"
             app:boxCornerRadiusBottomStart="15dp"
             app:boxCornerRadiusTopEnd="15dp"
             app:boxCornerRadiusTopStart="15dp"
-            >
+            app:boxStrokeWidth="0dp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtAuthor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#BFBFBF"
                 android:hint="Autor"
-                android:textStyle="italic"
-                />
+                android:textColor="@color/black"
+                android:textStyle="italic" />
 
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -77,29 +91,37 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
-            />
+            android:autofillHints="Categorias"
+            android:backgroundTint="@color/black"
+            android:dropDownSelector="@android:drawable/arrow_down_float" />
+
 
         <Switch
             android:id="@+id/switchFavorite"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Favorito"
-            android:gravity="end"
             android:layout_margin="16dp"
-            />
-
+            android:gravity="end"
+            android:text="Favorito"
+            android:textColor="@color/black"
+            android:thumbTint="#000000"
+            android:trackTint="@color/blue" />
 
         <Button
             android:id="@+id/btnSave"
+            style="@style/Widget.Material3.Button"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="Salvar"
             android:layout_gravity="center"
-            />
+            android:backgroundTint="@color/purple_500"
+            android:text="Salvar"
+            android:textSize="16sp"
+            android:textColor="@color/white" />
 
     </LinearLayout>
 
 
+    </com.google.android.material.card.MaterialCardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
