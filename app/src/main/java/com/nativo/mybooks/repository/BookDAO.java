@@ -14,7 +14,10 @@ import java.util.List;
 public interface BookDAO {
     //crud
     @Insert
-    void create(List<BookEntity> book);
+    void create(List<BookEntity> book); // cria uma lista
+
+    @Insert
+    Long createItem(BookEntity book); // criar um unico livro
 
     @Update
     int update(BookEntity book);

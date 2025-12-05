@@ -38,6 +38,14 @@ public class BookRepository {
         });
     }
 
+    // novo método para adicionar um livro
+    public void addBook(BookEntity book, CallBack<Long> callBack) {
+        Executors.newSingleThreadExecutor().execute(() -> {
+            long id = dataBase.createItem(book); // insere e obtém id
+            callBack.onSuccess(id);
+        });
+    }
+
     public void getFavoriteBooks(CallBack<List<BookEntity>> callBack) {
         Executors.newSingleThreadExecutor().execute(new Runnable() {
             @Override

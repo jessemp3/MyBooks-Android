@@ -40,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
             getSupportActionBar().hide();
         }
 
+        binding.fabAdd.setOnClickListener(view -> {
+
+        });
+
         setupNavigation();
     }
 
