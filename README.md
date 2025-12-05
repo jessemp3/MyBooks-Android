@@ -46,7 +46,6 @@ Contribuições são bem-vindas! Sugestões:
 - Faça commits pequenos e descritivos.
 - Abra uma Pull Request explicando as mudanças.
 
-Posso abrir a PR com este README atualizado se desejar.
 
 ## Estrutura (resumo)
 
@@ -65,8 +64,3 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 Desenvolvido por [jessemp3](https://github.com/jessemp3).
 
-## Últimas atualizações
-
-- b2f1e1d — Revise README for MyBooks-Android project — 2025-09-27T17:56:27Z  
-  (Atualizado nome do projeto e adicionados detalhes, funcionalidades, tecnologias e instruções.)
-- 3cf7c26 — feat: add README file and update VCS mappings for project directory — 2025-09-27T17:53:42Z
